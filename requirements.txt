@@ -1,0 +1,12 @@
+google-genai
+groq
+chromadb
+sentence-transformers
+scikit-learn
+streamlit
+fastapi
+uvicorn
+python-dotenv
+Pillow
+python-multipart
+pandas
