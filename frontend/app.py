@@ -137,8 +137,8 @@ def show_total(total_score: float, total_max: float, num_questions: int):
     Renders total score metrics and a grade-level message.
 
     Args:
-        total_score:    Sum of all question scores.
-        total_max:      Sum of all max marks.
+        total_score: Sum of all question scores.
+        total_max:Sum of all max marks.
         num_questions:  Number of questions graded.
     """
     if total_max > 0:
@@ -470,7 +470,7 @@ with tab2:
                         ts += res["score"]
                         tm += res["max_marks"]
                 pct_val = round(ts / tm * 100, 1) if tm else 0
-                grade   = "🏆 Excellent" if pct_val >= 80 else ("👍 Good" if pct_val >= 60 else "📚 Needs Work")
+                grade   = "🏆 Excellent" if pct_val >= 80 else ("👍 Good" if pct_val >= 60 else "Needs Work")
                 summary_rows.append({
                     "Student":     sname,
                     "Total Score": ts,
